@@ -52,10 +52,10 @@ Edit `/etc/libao.conf` by changing **default_driver=alsa** to **default_driver=p
 
 		OR
 
-		git clone git://github.com/keplerproject/luarocks.git
+		git clone https://://github.com/keplerproject/luarocks.git
 		cd luarocks
-		./configure
-		make build
+		sudo ./configure
+		sudo make build
 		sudo make install
 
 4. Install **Turbo.lua** and **LuaJSON**
