@@ -49,17 +49,26 @@ Edit `/etc/libao.conf` by changing **default_driver=alsa** to **default_driver=p
 		$ tar zxpf luarocks-2.2.2.tar.gz
 		$ cd luarocks-2.2.2
 		$ ./configure; sudo make bootstrap
-3. Install **Turbo.lua** and **LuaJSON**
+
+		OR
+
+		git clone git://github.com/keplerproject/luarocks.git
+		cd luarocks
+		./configure
+		make build
+		sudo make install
+
+4. Install **Turbo.lua** and **LuaJSON**
 
 		$ sudo luarocks install turbo
 		$ sudo luarocks install luajson
 		$ sudo luarocks install penlight
 		$ sudo luarocks install luasocket
-4. Download the source from [GitHub](https://github.com/rjpcomputing/Remodora/archive/master.zip)
-5. Extract it to any location
+5. Download the source from [GitHub](https://github.com/rjpcomputing/Remodora/archive/master.zip)
+6. Extract it to any location
 
 		$ unzip <remodora>.zip
-6. Execute the `remodora` script from inside the directory you extracted the source to. If a prefix is needed then pass that as the first argument. A prefix is appended to the URL. This can be useful if you are running any other apps on the server or for using a proxy server. In normal operation this is probably not needed. Also change the **href** attribute of `<base href="">` in the file `index.html` to match any prefix you are using.
+7. Execute the `remodora` script from inside the directory you extracted the source to. If a prefix is needed then pass that as the first argument. A prefix is appended to the URL. This can be useful if you are running any other apps on the server or for using a proxy server. In normal operation this is probably not needed. Also change the **href** attribute of `<base href="">` in the file `index.html` to match any prefix you are using.
 
 		$ ./remodora
 or
